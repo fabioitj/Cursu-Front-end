@@ -1,0 +1,37 @@
+.register{
+    margin-top: 1em;
+
+    &-box {
+        background: var(--linear-default);
+        margin: 0 1em;
+        padding: 1em;
+
+        &-header {
+
+            &-title {
+                color: var(--white);
+            }
+        }
+
+        &-body {
+            & form {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                align-items: flex-start;
+                margin: auto;
+            }
+    
+            &-button {
+                padding: 0.65em;
+                background: var(--linear-default);
+                font-family: 'Inter';
+                font-weight: 700;
+                color: var(--white);
+                font-size: 0.875em;
+                float: right;
+                border: 0;
+            }
+        }
+    }
+}

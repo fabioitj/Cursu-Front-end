@@ -1,0 +1,27 @@
+.create-modulo {
+    margin-top: 1em;
+
+    &-header {
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+
+        &-title {
+            font-weight: 600;
+            width: auto;
+        }
+
+        &-actions {
+            width: min-content;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            &-confirm {
+                width: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}

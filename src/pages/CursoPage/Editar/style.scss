@@ -1,0 +1,109 @@
+.editar-curso {
+    &-box {
+        margin: 1em;
+        background: var(--linear-default);
+        box-sizing: border-box;
+        padding: 1em;
+        
+
+        &-header {
+
+            &-title {
+                color: var(--white);
+            }
+        }
+
+
+        &-body {
+            
+            & form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 1em;
+                align-items: flex-start;
+                margin: auto;
+            }
+    
+            &-button {
+                display: flex;
+                gap: 1em;
+
+                &-alterar {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                }
+
+                &-password {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                }
+            }
+
+            &-images {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    }
+
+    &-aulas {
+        background: var(--linear-default);
+        box-sizing: border-box;
+        padding: 1em;
+        margin: 1em;
+
+        &-header {
+            &-title {
+                color: var(--white);
+            }
+        }
+
+        &-body {
+            &-modulos {
+                padding: 0;
+                
+                &-item {
+                    display: block;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .editar-curso {
+        display: flex;
+
+        &-box {
+            height: min-content;
+            width: 50%;
+
+            &-body {
+
+                &-images {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        &-aulas {
+            width: 50%;
+        }
+    }
+}

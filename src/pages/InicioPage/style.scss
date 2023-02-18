@@ -1,0 +1,20 @@
+.inicio {
+    margin: 1em;
+    background: var(--linear-default);
+    color: var(--white);
+    padding: 1em;
+
+    &-item{
+        // padding: 1em;
+
+        &-title {
+            margin-bottom: 2em;
+        }
+    
+        &-subtitle {
+            margin-bottom: 0px;
+            font-weight: 600;
+            font-size: 1em;
+        }
+    }
+}

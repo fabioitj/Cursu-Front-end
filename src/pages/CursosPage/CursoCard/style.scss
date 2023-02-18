@@ -1,0 +1,74 @@
+.curso-card {
+    // height: 300px;
+    width: 48%;
+    overflow: hidden;
+    margin-bottom: 1em;
+
+    &-box {
+        width: 100%;
+        height: 100%;
+        background: var(--linear-default);
+        padding: 0.2em;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        &-header {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            &-image {
+                width: 100%;
+            }
+        }
+
+        &-body {
+            
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-title {
+                color: var(--white);
+                font-weight: 600;
+                text-overflow: clip;
+                width: 100%;
+                margin: 0;
+                padding: 0.5em;
+                box-sizing: border-box;
+                overflow: hidden;
+            } 
+
+            &-price {
+                color: var(--white);
+                font-weight: 600;
+                text-align: right;
+                padding-right: 0.5em;
+                padding-bottom: 0.5em;
+                font-size: 1.125em;
+
+                &-bruto {
+                    color: var(--light-gray);
+                    display: inline;
+                    text-decoration: line-through;
+                    font-size: 0.875em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .curso-card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .curso-card {
+        width: 15%;
+    }
+}

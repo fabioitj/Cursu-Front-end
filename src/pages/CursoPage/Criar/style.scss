@@ -1,0 +1,128 @@
+.criar-curso {
+    margin: 1em;
+
+    &-box {
+        background: var(--linear-default);
+        box-sizing: border-box;
+        padding: 1em;
+        
+        &-header {
+
+            &-title {
+                color: var(--white);
+            }
+        }
+
+
+        &-body {
+            & form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 1em;
+                align-items: flex-start;
+                margin: auto;
+            }
+    
+            &-button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 1em;
+
+                &-criar {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                    // border: 1px solid var(--white);
+                }
+
+                &-password {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                    // border: 1px solid var(--white);
+                }
+
+                &-next {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                    // border: 1px solid var(--white);
+                }
+            }
+
+            &-images {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            &-categoria {
+                position: relative;
+                animation: toRight 0.2s linear;
+            }
+
+            &-infos {
+                position: relative;
+                animation: toLeft 0.2s linear;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .criar-curso {
+        &-box {
+            width: 50%;
+
+            &-body {
+                &-images {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@keyframes toRight {
+    from {
+        position: relative;
+        left: -200%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes toLeft {
+    from {
+        position: relative;
+        left: 200%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}

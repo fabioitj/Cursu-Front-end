@@ -1,0 +1,17 @@
+.select-box {
+    width: 100%;
+    padding: 0.65em 0.5em;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+
+
+
+    &-item {
+        color: black;
+
+        &:checked {
+            display: none;
+        }
+    }
+}

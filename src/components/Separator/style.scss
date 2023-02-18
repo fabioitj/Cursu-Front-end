@@ -1,0 +1,10 @@
+.separator {
+    height: 1px;
+    border: none;
+    background-color: var(--primary-color);
+    margin: 0;
+
+    &-shadow {
+        box-shadow: var(--gray) 0px 5px 10px 0.1px;
+    }
+}

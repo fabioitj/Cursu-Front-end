@@ -1,0 +1,47 @@
+.footer {
+    height: 150px;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    bottom: 0;
+
+    &-first-layer {
+        width: 100%;
+
+        &-list {
+
+            padding-left: 1.5em;
+            margin: 0.5em 0;
+
+            &-item {
+                display: block;
+                padding: 0.15em;       
+            }
+    
+            &-link {
+                color: var(--white);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-second-layer {
+        height: 35px;
+        width: 100%;
+        background-color: var(--dark-gray);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 0.75em;
+        box-sizing: border-box;
+        
+        &-copyright {
+            color: var(--white);
+            font-size: 10px;
+            font-weight: 700;
+        }
+    }
+}

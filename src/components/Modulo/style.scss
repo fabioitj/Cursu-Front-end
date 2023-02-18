@@ -1,0 +1,114 @@
+.modulo {
+    margin: 1em 0;
+
+    &-header {
+        margin-bottom: 1em;
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5em;
+
+        &-title {
+            font-weight: 600;
+            width: auto;
+            margin: 0.25em;
+        }
+
+        
+            
+        
+
+        &-actions {
+            width: min-content;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+
+            &-edit {
+                width: 24px;
+                cursor: pointer;
+            }
+
+            &-remove {
+                width: 24px;
+                cursor: pointer;
+            }
+
+            &-cancel {
+                width: 24px;
+                cursor: pointer;
+            }
+
+            &-confirm {
+                width: 24px;
+                cursor: pointer;
+            }
+
+            &-arrow {
+                width: 24px;
+                cursor: pointer;
+                margin-left: 1em;
+                transition: 0.2s all;
+            }
+
+            &-label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-left: 1px solid var(--gray);
+            }
+        }
+    }
+
+    &-input:checked ~ &-body  {
+        display: block;
+        animation: show-aulas 0.2s ease;
+    }
+
+    &-input:not(:checked) ~ &-body {
+        animation: hide-aulas 0.2s ease-out;
+        display: none;
+    }
+
+    &-input:checked ~ &-header > &-header-actions > &-header-actions-label > &-header-actions-arrow { 
+        transform: rotateZ(-180deg);
+    }
+
+    &-body {
+        // display: none;
+
+        &-aulas {
+            padding-left: 1em;
+            padding-right: 1em;
+
+            &-item {
+                display: block;
+            }
+        }
+
+        &-aulas-editable {
+            padding-right: 0px;
+        }
+    }
+}
+
+@keyframes show-aulas {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide-aulas {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

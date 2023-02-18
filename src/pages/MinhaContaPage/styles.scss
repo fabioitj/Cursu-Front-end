@@ -1,0 +1,81 @@
+.minha-conta {
+    &-box {
+        background: var(--linear-default);
+        box-sizing: border-box;
+        padding: 1em;
+        margin: 1em;
+        
+        &-header {
+
+            &-title {
+                color: var(--white);
+            }
+        }
+
+
+        &-body {
+            & form {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                align-items: flex-start;
+                margin: auto;
+            }
+    
+            &-button {
+                display: flex;
+                gap: 1em;
+
+                &-alterar {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                }
+
+                &-password {
+                    padding: 0.65em;
+                    background: var(--linear-default);
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    color: var(--white);
+                    font-size: 0.875em;
+                    float: right;
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    &-meus-cursos, &-cursos-criados-por-mim {
+        margin: 1em;
+
+        &-header {
+            &-title {
+                margin-bottom: 0px;
+            }
+        }
+
+        &-body {
+
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .minha-conta {
+        display: flex;
+
+        &-box{
+            width: 50%;
+        }
+        
+        &-cursos {
+            width: 50%;
+        } 
+    }
+}
